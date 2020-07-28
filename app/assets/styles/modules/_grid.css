@@ -1,0 +1,15 @@
+.grid {
+  display: grid;
+  grid-gap: 1.25rem;
+  justify-items: center;
+  align-items: center;
+
+  &__thirds {
+    grid-template-columns: 1fr;
+
+    @mixin atSmall {
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 3rem;
+    }
+  }
+}
