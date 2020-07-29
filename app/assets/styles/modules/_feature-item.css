@@ -1,7 +1,7 @@
 .feature-item {
   position: relative;
 
-  padding-bottom: 2.5rem;
+  padding-bottom: 1.75rem;
 
   @mixin atSmall {
     padding-left: 100px;

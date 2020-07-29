@@ -4,21 +4,35 @@
 
   &__2-columns {
     grid-template-columns: 1fr;
+    grid-gap: 0;
 
-    @mixin atSmall {
+    @mixin atMedium {
       grid-template-columns: 1fr 1fr;
       grid-gap: 7rem;
+    }
+  }
+
+  &__1fr-2fr-columns {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 2rem;
+
+    @mixin atMedium {
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 3rem;
     }
   }
 
   &__3-columns {
     grid-template-columns: 1fr;
     justify-items: center;
-    align-items: center;
+    grid-gap: 8rem;
 
-    @mixin atSmall {
-      grid-template-columns: 1fr 2fr;
+    @mixin atMedium {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
       grid-gap: 3rem;
+      align-content: stretch;
     }
   }
 }
