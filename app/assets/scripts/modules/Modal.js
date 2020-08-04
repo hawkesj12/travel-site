@@ -2,16 +2,11 @@ class Modal {
   constructor() {
     this.insertHTML();
     this.modal = document.querySelector(".modal");
-    this.openModalButtons = document.querySelectorAll(".open-modal");
     this.closeIcon = document.querySelector(".modal__close");
     this.events();
   }
 
   events() {
-    // listen for open click
-    this.openModalButtons.forEach((el) =>
-      el.addEventListener("click", (e) => this.openTheModal(e))
-    );
     // listen for close click
     this.closeIcon.addEventListener("click", (e) => this.closeTheModal(e));
     // listen for ESC key
@@ -24,8 +19,7 @@ class Modal {
     }
   }
 
-  openTheModal(e) {
-    e.preventDefault();
+  openTheModal() {
     this.modal.classList.add("modal--is-visible");
   }
 
