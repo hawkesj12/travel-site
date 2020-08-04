@@ -4,6 +4,18 @@ import MobileMenu from "./modules/MobileMenu";
 import RevealOnScroll from "./modules/RevealOnScroll";
 import StickyHeader from "./modules/StickyHeader";
 
+// React Related Code Goes Here
+import React from "react";
+import ReactDOM from "react-dom";
+
+// Import React components that we created
+import ReactComponent from "./modules/ReactComponent";
+
+ReactDOM.render(
+  <ReactComponent />,
+  document.querySelector("#my-react-example")
+);
+
 new StickyHeader();
 new MobileMenu();
 new RevealOnScroll(document.querySelectorAll(".feature-item"), 75);
