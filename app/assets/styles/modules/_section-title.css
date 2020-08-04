@@ -13,6 +13,11 @@
     margin-bottom: 8rem;
   }
 
+  &--less-margin {
+    margin-bottom: 1.3rem;
+    margin-top: 0;
+  }
+
   strong {
     font-weight: bold;
   }
