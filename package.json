@@ -42,7 +42,7 @@
   "dependencies": {
     "html-webpack-plugin": "^4.3.0",
     "lazysizes": "^5.2.2",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "normalize.css": "^8.0.1",
     "postcss-loader": "^3.0.0",
     "react": "^16.13.1",
